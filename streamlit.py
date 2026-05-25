@@ -78,7 +78,7 @@ div[data-baseweb="select"] > div:hover {
 
 
 # ----------------------------- Load Models ------------------------------------------------
-model = pk.load(open('RandomForestRegressor_model.pkl','rb'))
+model = joblib.load('RandomForestRegressor_model.pkl')
 preprocessor = pk.load(open('preprocessor.pkl','rb'))
 
 # ----------------------------- Load Data --------------------------------------------------
