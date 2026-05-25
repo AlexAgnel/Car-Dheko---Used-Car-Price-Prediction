@@ -80,7 +80,7 @@ div[data-baseweb="select"] > div:hover {
 
 # ----------------------------- Load Models ------------------------------------------------
 model = joblib.load('RandomForestRegressor_model.pkl')
-preprocessor = pk.load(open('preprocessor.pkl','rb'))
+preprocessor = joblib.load('preprocessor.pkl')
 
 # ----------------------------- Load Data --------------------------------------------------
 df = pd.read_csv("cleaned_dataset.csv")
